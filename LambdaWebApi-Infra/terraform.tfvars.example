@@ -1,0 +1,7 @@
+api_name = "my-api"
+application = "my-app"
+environment = "dev"
+s3_bucket_name = "my-s3-bucket"
+s3_key = "my-s3-key"
+stage_name = "dev"
+tag = "my-tag"  
