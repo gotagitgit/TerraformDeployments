@@ -44,3 +44,13 @@ variable "stage_name" {
   description = "Name of the API Gateway stage"
   default     = "dev"
 }
+
+variable "package_name" {
+  type        = string
+  description = "Compressed file package name *.zip"
+}
+
+variable "application_dir" {
+  type = string
+  description = "Path of your .net project. Relative to LambdaWebApi-infra folder i.e. ..\\..\\my-dotnet-project"
+}

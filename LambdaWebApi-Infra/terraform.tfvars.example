@@ -1,6 +1,8 @@
 api_name = "my-api"
 application = "my-app"
+application_dir = "my-app-folder"
 environment = "dev"
+package_name = "my-package.zip"
 s3_bucket_name = "my-s3-bucket"
 s3_key = "my-s3-key"
 stage_name = "dev"
