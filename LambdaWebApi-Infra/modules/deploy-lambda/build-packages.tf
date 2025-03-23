@@ -12,6 +12,9 @@ resource "null_resource" "build_application" {
 
   provisioner "local-exec" {
     command = <<EOF
+      # Create .packages folder if not exists
+      New-Item -ItemType Directory -Force -Path ".\.packages"
+      
       dotnet publish ${var.application_dir} -c Release
       Compress-Archive -Path "${local.publish_dir}\*" -DestinationPath ${local.package_path} -Force
 
