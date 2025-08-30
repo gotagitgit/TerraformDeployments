@@ -1,0 +1,9 @@
+aws_profile                 = "your-aws-profile-name"
+aws_region                  = "your-preferred-region"
+launch_template_name        = "my-app-launch-template"
+instance_type               = "t3.micro"
+
+
+environment                 = "dev"
+tag_prefix                  = "your-tag"
+health_check_grace_period   = 120
